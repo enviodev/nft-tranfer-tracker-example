@@ -1,0 +1,6 @@
+type RoughRyderNFT_Transfer {
+  id: ID!
+  from: String!
+  to: String!
+  tokenId: BigInt!
+}

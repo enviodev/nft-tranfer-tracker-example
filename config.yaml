@@ -1,0 +1,32 @@
+name: My Envio Indexer
+networks:
+  - id: 1
+    start_block: 0
+    end_block: null
+    contracts:
+      - name: RoughRyderNFT
+        address:
+          - 0x09101f948aAFd081A31d88a04c8e34812079A8F0
+          - 0x0F4B28D46CAB209bC5fa987A92A26a5680538e45
+          - 0x1347A97789cd3Aa0b11433E8117F55Ab640A0451
+          - 0x375DfbE7EBdF082276fC0cB9447932DC1bB6E306
+          - 0x3a8778A58993bA4B941f85684D74750043A4bB5f
+          - 0x3d79a3DD3f94Be85562c09d8ba3d62bA9940D3fF
+          - 0x4D7d2e237D64d1484660b55c0A4cC092fa5e6716
+          - 0x556697Ca91476B811f37A851dD2e53ae4c6024dB
+          - 0x60E4d786628Fea6478F785A6d7e704777c86a7c6
+          - 0x6d964DfcBA0ff9b01Aa764ea83b65D5265A47466
+          - 0x77372a4cc66063575b05b44481F059BE356964A4
+          - 0x884Ba86FAA29745b6C40B7098567A393E91335CF
+          - 0x8943C7bAC1914C9A7ABa750Bf2B6B09Fd21037E0
+          - 0x953d2F77459eee6B76e85ea0456e8f0f9bEF5B0A
+          - 0x9674739124d69D555712a30e0A44dE648F494219
+          - 0xbc4aaADe7AF26ef4dE733CF23Dc31705D1f499ec
+          - 0xC24408a8775c2c50C361CB8D9943f649643c9268
+          - 0xC379e535CaFf250a01CAa6C3724Ed1359Fe5c29B
+          - 0xC9d198089D6c31d0Ca5Cc5B92C97a57A97BBfdE2
+          - 0xD4B7D9bb20fA20dDADa9eCEf8a7355ca983cCCB1
+          - 0xdD467a6C8ae2b39825a452E06b4fA82F73D4253D
+        handler: src/EventHandlers.ts
+        events:
+          - event: Transfer(address indexed from, address indexed to, uint256 indexed tokenId)
